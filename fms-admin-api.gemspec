@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "activesupport", "~> 3"
   s.add_runtime_dependency "nokogiri"
   s.add_runtime_dependency "colorize"
-  s.add_runtime_dependency "time"
   #s.add_development_dependency "webmock"
   #s.add_development_dependency "rake"
   #s.add_development_dependency "mocha"

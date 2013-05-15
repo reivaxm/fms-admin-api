@@ -46,7 +46,7 @@ module FMS
       fms_response = {}
       fms_response[:level] = xml.xpath('/result/level').text.to_sym
       fms_response[:code] = xml.xpath('/result/code').text
-      fms_response[:time] = time_parse(xml.xpath('/result/timestamp').text)
+      fms_response[:time] = Time.httpdate(xml.xpath('/result/timestamp').text)
       fms_response[:error] = xml.xpath('/result/description').text if fms_response[:level] == :error
       fms_response.merge!(data_parsor(xml.xpath('/result/data'))) if fms_response[:level] == :status
       return fms_response
