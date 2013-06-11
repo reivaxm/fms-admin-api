@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency "activesupport", "~> 3"
-  s.add_runtime_dependency "nokogiri"
+  s.add_runtime_dependency "nokogiri", "~> 1.5.9"
   s.add_runtime_dependency "colorize"
   #s.add_development_dependency "webmock"
   #s.add_development_dependency "rake"

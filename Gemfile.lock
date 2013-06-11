@@ -4,7 +4,7 @@ PATH
     fms-admin-api (1.0)
       activesupport (~> 3)
       colorize
-      nokogiri
+      nokogiri (~> 1.5.9)
 
 GEM
   remote: http://rubygems.org/
@@ -14,8 +14,8 @@ GEM
       multi_json (~> 1.0)
     colorize (0.5.8)
     i18n (0.6.1)
-    multi_json (1.7.3)
-    nokogiri (1.5.9)
+    multi_json (1.7.6)
+    nokogiri (1.5.10)
 
 PLATFORMS
   ruby
